@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kaseystowell/Documents/workspace/timingtest/include/celebrity.h
+string
+-
+ostream
+-
+
+/Users/kaseystowell/Documents/workspace/timingtest/main.cpp
+iostream
+-
+vector
+-
+include/celebrity.h
+/Users/kaseystowell/Documents/workspace/timingtest/include/celebrity.h
+
+/Users/kaseystowell/Documents/workspace/timingtest/src/celebrity.cpp
+string
+-
+../include/celebrity.h
+/Users/kaseystowell/Documents/workspace/timingtest/include/celebrity.h
+
