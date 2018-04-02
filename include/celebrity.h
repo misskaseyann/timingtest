@@ -10,6 +10,8 @@
 
 class celebrity {
     public:
+        celebrity();
+        
         celebrity(std::string name,
                   int rating,
                   std::string category,
@@ -29,6 +31,8 @@ class celebrity {
             return havemet < rhs.havemet;
         }
         
+        
+        
         friend std::ostream &operator<<(std::ostream &os, const celebrity &celebrity1);
         
         const std::string &getName() const;
@@ -46,6 +50,12 @@ class celebrity {
         bool isHavemet() const;
         
         void setHavemet(bool havemet);
+        
+        bool operator>(const celebrity &rhs) const;
+        
+        bool operator<=(const celebrity &rhs) const;
+        
+        bool operator>=(const celebrity &rhs) const;
     
     private:
         std::string name;

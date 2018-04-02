@@ -12,6 +12,10 @@ string
 ostream
 -
 
+/Users/kaseystowell/Documents/workspace/timingtest/include/sorts.h
+vector
+-
+
 /Users/kaseystowell/Documents/workspace/timingtest/main.cpp
 iostream
 -
@@ -19,6 +23,8 @@ vector
 -
 include/celebrity.h
 /Users/kaseystowell/Documents/workspace/timingtest/include/celebrity.h
+include/sorts.h
+/Users/kaseystowell/Documents/workspace/timingtest/include/sorts.h
 
 /Users/kaseystowell/Documents/workspace/timingtest/src/celebrity.cpp
 string

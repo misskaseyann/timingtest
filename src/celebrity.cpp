@@ -5,6 +5,10 @@
 #include <string>
 #include "../include/celebrity.h"
 
+celebrity::celebrity() {
+
+}
+
 celebrity::celebrity(std::string name, int rating, std::string category, bool havemet) {
     celebrity::name = std::move(name);
     if (rating < 0)
@@ -58,4 +62,16 @@ std::ostream &operator<<(std::ostream &os, const celebrity &celebrity1) {
     os << "name: " << celebrity1.name << " rating: " << celebrity1.rating << " category: " << celebrity1.category
        << " havemet: " << celebrity1.havemet;
     return os;
+}
+
+bool celebrity::operator>(const celebrity &rhs) const {
+    return rhs < *this;
+}
+
+bool celebrity::operator<=(const celebrity &rhs) const {
+    return !(rhs < *this);
+}
+
+bool celebrity::operator>=(const celebrity &rhs) const {
+    return !(*this < rhs);
 }

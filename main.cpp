@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
 #include "include/celebrity.h"
+#include "include/sorts.h"
 
 int main() {
     std::vector<celebrity> celebs;
+    
     celebrity celeb = celebrity("Link", 10, "Hero", true);
     celebs.push_back(celeb);
     celeb = celebrity("Beedle", 1, "Salesman", true);
@@ -24,8 +26,23 @@ int main() {
     celebs.push_back(celeb);
     celeb = celebrity("Zelda", 10, "Princess", false);
     celebs.push_back(celeb);
-    for (std::vector<celebrity>::iterator it = celebs.begin(); it != celebs.end(); ++it) {
-        std::cout << ' ' << *it << std::endl;
+    
+    for (auto &celeb : celebs) {
+        std::cout << ' ' << celeb << std::endl;
     }
+    
+    std::cout << '\n';
+    
+    //bubble_sort(celebs);
+    //selection_sort(celebs);
+    //insertion_sort(celebs);
+    //mergeSort(celebs);
+    //quicksort(celebs);
+    
+    for (auto &celeb : celebs) {
+        std::cout << ' ' << celeb << std::endl;
+    }
+    
+    
     return 0;
 }
